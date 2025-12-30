@@ -5,6 +5,205 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bouncing Balls</title>
     <link rel="stylesheet" href="bounce.css">
+
+<style>    body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 100px;
+    background-color: #1f1f1f;
+}
+
+.balls{
+    border-radius: 50%;
+    position: relative;
+    left: 250px;
+    top: 100px;
+}
+.balled{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+
+.ball1{
+    height: 60px;
+    width: 60px;
+    box-shadow: 0 0 30px crimson ;
+    background-color: crimson;
+    animation-name: ball1;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+}
+
+@keyframes ball1{
+    0%{
+        transform: translate(0,0px);
+
+    }
+    50%{
+        animation-duration:1s;
+        transform: translate(0,290px);
+    }
+    100%{
+        position: ;
+        transform: translate(0,0px);
+
+    }
+}
+.ball2{
+    height: 60px;
+    width: 60px;
+    background-color: rgb(26, 131, 99);
+    box-shadow: 0 0 30px rgb(26, 131, 99);
+    animation-name: ball1;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 0.2s;
+
+}
+@keyframes ball2{
+    0%{
+        /* transform: translate(0,250px); */
+    }
+    50%{
+        transform: translate(0,290px);
+    }
+    100%{
+        
+        transform: translate(0,0px);
+
+    }
+}
+.ball3{
+    height: 60px;
+    width: 60px;
+    background-color: lightgreen;
+    box-shadow: 0 0 30px lightgreen;
+    animation-name: ball1;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 0.4s;
+}
+@keyframes ball3{
+    0%{
+        /* transform: translate(0,250px); */
+    }
+    50%{
+        transform: translate(0,290px);
+    }
+    100%{
+        
+        transform: translate(0,0px);
+
+    }
+}
+.ball4{
+    height: 60px;
+    width: 60px;
+    background-color: blue;
+    box-shadow: 0 0 30px blue;
+    animation-name: ball1;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 0.8s;
+
+}
+@keyframes ball4{
+    0%{
+        /* transform: translate(0,250px); */
+    }
+    50%{
+        transform: translate(0,290px);
+    }
+    100%{
+        
+        transform: translate(0,0px);
+
+    }
+}
+.ball5{
+    height: 60px;
+    width: 60px;
+    background-color: rgb(75, 148, 138);
+    box-shadow: 0 0 30px rgb(75, 148, 138);
+    animation-name: ball1;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 0.8s;
+
+}
+@keyframes ball5{
+    0%{
+        /* transform: translate(0,250px); */
+    }
+    50%{
+        transform: translate(0,290px);
+    }
+    100%{
+        
+        transform: translate(0,0px);
+
+    }
+}
+
+.ball6{
+    height: 60px;
+    width: 60px;
+    box-shadow: 0 0 30px crimson;
+    background-color: crimson;
+    animation-name: ball1;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+
+}
+
+@keyframes ball6{
+    0%{
+        /* transform: translate(0,250px); */
+    }
+    50%{
+        transform: translate(0,290px);
+    }
+    100%{
+        
+        transform: translate(0,0px);
+
+    }
+}
+/* .line{
+    height: 200px;
+    width: 2000px;
+    background-color: aqua;
+    position: relative;
+    top: 450px;
+    right: 350px;
+} */
+
+hr{
+    height: 10px;
+    width: 890px;
+    background-color: aqua;
+    position: relative;
+    top: 440px;
+    right: 720px;
+    background-image: linear-gradient(to right ,crimson,  blue, green);
+    border: none;
+    border-radius: 50%;
+}
+
+</style>
 </head>
 <body>
     <div class="balled">
