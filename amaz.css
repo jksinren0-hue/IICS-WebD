@@ -1,0 +1,283 @@
+body{
+    margin: 0;
+    background-color: white;
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-logo{
+    background-color: red;
+    background-image: url(am1.png);
+    background-size: cover;
+    width: 130px;
+    height: 58px;
+    padding-left: 5px;
+    padding-right: 7px;
+    margin: 1px;
+    background-position: center;
+    
+}
+
+.border{
+    border: 1.5px solid transparent;
+}
+
+.border:hover{
+    border: 1.5px solid white;
+}
+
+.nav-address{
+    width: 200px;
+    height: 60px;
+    /* background-color: blue; */
+}
+
+.add-first{
+    color: #cccccc;
+    font-size: 0.84rem;
+    margin-left: 20px;
+    margin-top: 5px;
+    position: relative;
+    top: 15px;
+    font-weight: bold;
+}
+
+.add-second{
+    font-size: 1rem;
+    font-weight: bold;
+    position: relative;
+    right: 3px;
+    
+}
+
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: aqua;
+    width: 620px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.nav-search:hover{border: 1.5px solid orange;}
+.search-select{
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+}
+
+.search-input{
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+}
+
+.search-icon{
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    background-color: #febd68;
+    color: #0f1111;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+
+}
+
+.nav-language{
+    position: relative;
+    display: inline-block;
+    color: white;
+    background-color: #0f1111;
+    padding: 10px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.selected-lang{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
+    
+}
+
+.flag{
+    width: 20px;
+    height: auto;
+}
+
+.arrow{
+    font-size: 16px;
+    color: #cccccc;
+}
+
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    color: #333;
+    list-style: none;
+    padding: 10px 0;
+    border: 1px solid #ddd;
+    min-width: 150px;
+    z-index: 10;
+}
+
+.dropdown-menu li a{
+    padding: 8px 15px;
+    text-decoration: none;
+    display: block;
+    color: #333;
+
+}
+
+.dropdown-menu li a:hover{
+    background-color: #f0f0f0;
+    text-decoration: underline;
+}
+
+.nav-language:hover .dropdown-menu{
+    display: block;
+}
+.nav-signin{
+    width: 110px;
+    height: 50px;
+
+    
+}
+.spann{
+    font-size: 0.7rem;
+    position: relative;
+    bottom: 4px;
+    
+}
+
+.nav-second{
+    font-size: 0.85rem;
+    font-weight: 700;
+    position: relative;
+    bottom: 16px;
+}
+
+.nav-returns{
+    width: 75px;
+    height: 50px;
+}
+
+.nav-cart i{
+    font-size: 30px;
+    
+}
+
+.nav-cart{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+
+.panel{
+    width: 100%;
+    height: 40px;
+    background-color: #222f3d;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.panel-all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rebeccapurple; */
+}
+.panel-ops p{
+    display: inline;
+    /* margin-right: 100px; */
+}
+
+.panel-ops{
+    width: 70%;
+    font-size: 0.85rem;
+    /* background-color: red; */
+    display: flex;
+    height: 40px;
+    gap: 2px;
+
+    
+    justify-content: space-evenly;
+}
+.panel-deals img{
+    height: 39px;
+    position: relative;
+    top: 1px;
+}
+
+
+.Shopping{
+    background-image: url(festive1.jpg);
+    height: 533px;
+    width: 100%;
+    background-size: cover;
+    margin-top: -96px;
+}
+
+
+
+.box{
+            width: 310px;
+            height: 400px;
+            background-color: rgb(192, 31, 31);
+            margin-left: 40%;
+            margin-top: 7%;
+            padding: 20px 0px 15px;
+            text-align: center;
+            margin-left: -2px;
+}
+.header-text{
+    margin-top: -30px;
+    
+}
+
+
+
+*{
+    text-decoration: none;
+}
+.img1{
+    margin-left: -160px;
+    font-size: 0.7rem;
+    
+
+}
+
+.img2{
+    margin-top: -150px;
+    margin-left: 135px;
+}
+
+.img3{
+    margin-left: -160px;
+
+}
+
+.img4{
+    margin-top: -158px;
+    margin-left: 128px;
+}
+
+
+

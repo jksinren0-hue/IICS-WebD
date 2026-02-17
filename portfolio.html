@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">PORTFOLIO <span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="status-chip">
+            <span class="pulse-dot"></span>
+            Currently learning; <span class="current-focus">Python & JS</span>
+        </div>
+
+        <div class="typewriter">
+            <h1>"In a world of logic, I create the impossible."</h1>
+
+        </div>
+
+        <div class="hero-content">
+            <h1>Hi, I'm <span>[Jagat]</span></h1>
+            <p>Student at IICS | Aspiring Software Engineer</p>
+        </div>
+
+        <div class="marquee">
+            <div class="marquee-content">
+                <span>HTML5</span> <span>CSS3</span> <span>JAVASCRIPT</span>
+                <span>PYTHON</span> <span>WEB DESIGN</span> <span>REACT</span>
+                <span>HTML5</span> <span>CSS3</span> <span>JAVASCRIPT</span>
+                <span>PYTHON</span> <span>WEB DESIGN</span> <span>REACT</span>
+            </div>
+        </div>
+
+        <div class="hero-btns">
+            <a href="#projects" class="btn-primary">View Projects</a>
+            <a href="#contact" class="btn-secondary">Get in touch</a>
+        </div>
+
+        <div class="scroll-guide">
+            <div class="line"></div>
+            <span class="scroll-text">SCROLL</span>
+        </div>
+    </section>
+
+
+    <section id="projects" class="projects-section">
+    <div class="section-title">
+        <h2>Selected <span>Works</span></h2>
+        <div class="title-line"></div>
+    </div>
+
+    <div class="projects-grid">
+        <div class="project-card">
+            <div class="card-glass"></div>
+            <div class="project-info">
+                <span class="tech-tag">Python</span>
+                <h3>Automated Logic Tool</h3>
+                <p>A backend utility built to handle complex calculations and data loops.</p>
+                <a href="https://github.com/yourusername/python-logic-tool" target="_blank" class="view-link">View Repository →</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="card-glass"></div>
+            <div class="project-info">
+                <span class="tech-tag">HTML/CSS</span>
+                <h3>Surrealist Gallery</h3>
+                <p>A responsive landing page featuring Kafkaesque design elements and glassmorphism.</p>
+                <a href="https://yourportfolio-gallery.netlify.app" target="_blank" class="view-link">Live Demo →</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="card-glass"></div>
+            <div class="project-info">
+                <span class="tech-tag">JavaScript</span>
+                <h3>Interactive Dashboard</h3>
+                <p>Dynamic UI components with real-time DOM manipulation and data visualization.</p>
+                <a href="https://github.com/yourusername/js-dashboard" target="_blank" class="view-link">Exploration Hub →</a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <div class="section-title">
+            <h2>Technical <span>Arsenal</span></h2>
+            <div class="title-line"></div>
+        </div>
+
+        <div class="skills-container">
+            <div class="skill-category">
+                <div class="category-header">
+                <i class="code-icon"></i>
+                <h3>Frontend Development</h3>
+            </div>
+            <ul class="skill-list">
+                <li>HTML5 / Semantic Layouts</li>
+                <li>CSS3 / Flexbox & Grid</li>
+                <li>Responsive Design</li>
+                <li>Modern JavaScript (ES6+)</li>
+            </ul>
+        </div>
+
+        <div class="skill-category">
+            <div class="category-header">
+                <i class="python-icon"></i>
+                <h3>Software Engineering</h3>
+            </div>
+            <ul class="skill-list">
+                <li>Python 3 / Logic Building</li>
+                <li>Data Structures & Loops</li>
+                <li>IT Tools & Systems</li>
+                <li>Automation Scripts</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<section id="contact" class="contact-section">
+    <div class="section-title">
+        <h2>Get in <span>Touch</span></h2>
+        <p class="contact-subtitle">Currently open for internships and collaborations.</p>
+    </div>
+
+    <div class="contact-container">
+        <form class="contact-form">
+            <div class="input-group">
+                <input type="text" placeholder="Your Name" required>
+            </div>
+            <div class="input-group">
+                <input type="email" placeholder="Your Email" required>
+            </div>
+            <div class="input-group">
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Transmission</button>
+        </form>
+
+        <div class="contact-info">
+            <div class="info-item">
+                <span class="label">Location</span>
+                <p>Delhi, India (IICS Institute)</p>
+            </div>
+            <div class="info-item">
+                <span class="label">Digital Presence</span>
+                <div class="social-links">
+                    <a href="#">LinkedIn</a>
+                    <a href="#">GitHub</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+const observerOptions = {
+    threshold: 0.1
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+        }
+    });
+}, observerOptions);
+
+// Select all sections and cards to reveal
+document.querySelectorAll('section, .project-card, .skill-category').forEach(el => {
+    el.classList.add('reveal-on-scroll');
+    observer.observe(el);
+});
+</script>
+<footer>
+    <p>&copy; 2026 [Jagat Khatri]. Built with Logic & Ambition.</p>
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+.box{
+            width: 310px;
+            height: 440px;
+            background-color: white;
+            margin-left: 40%;
+            margin-top: 7%;
+            padding: 20px 0px 15px;
+            text-align: center;
+}
+
+body{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+}
+
+*{
+    text-decoration: none;
+}
+.img1{
+    margin-left: -160px;
+    font-size: 0.7rem;
+    
+
+}
+
+.img2{
+    margin-top: -150px;
+    margin-left: 135px;
+}
+
+.img3{
+    margin-left: -160px;
+
+}
+
+.img4{
+    margin-top: -158px;
+    margin-left: 128px;
+}
+
+
+
